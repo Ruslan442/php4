@@ -22,7 +22,7 @@
     </header> 
     <main>
         <section class="my-6 flex flex-row w-[800px] mx-auto">
-            <ul class="w-[300px] min-h-[500px] bg-sky-100">
+            <ul class="w-[300px] min-h-[500px] bg-blue-100">
                 <li class="border-2 border-sky-500 hover:bg-indigo-300 mb-1">
                     <button data-channel="0" class="channel w-full flex items-center min-h-[50px]">
                         <img class="w-[30px] mr-1" src="img/vk.png" alt="">
