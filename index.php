@@ -1,6 +1,9 @@
 <?php
     session_start();
-    
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: auth.php');
+        exit();
+    }
 
 ?>
 <!DOCTYPE html>
@@ -22,27 +25,27 @@
     </header> 
     <main>
         <section class="my-6 flex flex-row w-[800px] mx-auto">
-            <ul class="w-[300px] min-h-[500px] bg-indigo-100">
-                <li class="border-2 border-sky-500 hover:bg-sky-300 mb-1">
+            <ul class="w-[300px] min-h-[500px] bg-sky-100">
+                <li class="border-2 border-sky-500 hover:bg-indigo-300 mb-1">
                     <button data-channel="0" class="channel w-full flex items-center min-h-[50px]">
-                        <img class="w-[30px] mr-1" src="img/MXs7HOqpVbg.jpg" alt="">
-                        <p>Быстро и вкусно</p>
+                        <img class="w-[30px] mr-1" src="img/vk.png" alt="">
+                        <p>Очень вкусно</p>
                     </button>
                 </li>
-                <li class="border-2 border-sky-500 flex hover:bg-sky-300 items-center mb-1">
+                <li class="border-2 border-sky-500 flex hover:bg-indigo-300 items-center mb-1">
                     <button data-channel="1" class="channel w-full flex items-center min-h-[50px]">
-                        <img class="w-[30px] mr-1" src="img/photo_2022-12-05_16-38-43.jpg" alt="">
-                        <p>Новости крипторынка</p>
+                        <img class="w-[30px] mr-1" src="img/kr.png" alt="">
+                        <p>Развитие крипторынка</p>
                     </button>
                 </li>
-                <li class="border-2 border-sky-500 flex hover:bg-sky-300 items-center mb-1">
+                <li class="border-2 border-sky-500 flex hover:bg-indigo-300 items-center mb-1">
                     <button data-channel="2" class="channel w-full flex items-center min-h-[50px]">
-                        <img class="w-[30px] mr-1" src="img/photo_2022-04-17_15-43-04.jpg" alt="">
-                        <p>Программисты и точка</p>
+                        <img class="w-[30px] mr-1" src="img/pr.png" alt="">
+                        <p>Программисты в деле</p>
                     </button>
                 </li>
             </ul>
-            <div class="w-[500px] bg-violet-100 mx-5 relative">
+            <div class="w-[500px] bg-sky-100 mx-5 relative">
                 <div class="chat pb-20">
                     <p class="text-center mt-10 text-slate-500 text-xl">выберите чат...</p>
                 </div>
