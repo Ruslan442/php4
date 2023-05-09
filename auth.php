@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/output.css" rel="stylesheet">
-    <title>RK2</title>
+    <title>php4</title>
 </head>
 <body>
     <section class="w-screen h-screen py-10">
