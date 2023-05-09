@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost','root','','php4');
+$db = mysqli_connect('localhost','root','','rk2');
 
 $email = $_POST['email'];
 $password = $_POST['password'];
